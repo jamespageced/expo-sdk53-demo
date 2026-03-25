@@ -2,9 +2,9 @@ module.exports = {
   name: process.env.EXPO_PUBLIC_CONFIG_NAME,
   slug: process.env.EXPO_PUBLIC_CONFIG_SLUG,
   version: process.env.EXPO_PUBLIC_CONFIG_VERSION,
-  orientation: "portrait",
+  orientation: 'portrait',
   icon: process.env.EXPO_PUBLIC_CONFIG_ICON,
-  userInterfaceStyle: "light",
+  userInterfaceStyle: 'light',
   newArchEnabled: true,
   android: {
     adaptiveIcon: {
@@ -16,6 +16,9 @@ module.exports = {
     versionCode: Number(process.env.EXPO_PUBLIC_CONFIG_ANDROID_VERSIONCODE)
   },
   ios: {
+    icon: {
+      backgroundColor: '#ffffff'
+    },
     buildNumber: process.env.EXPO_PUBLIC_CONFIG_IOS_BUILDNUMBER,
     bundleIdentifier: process.env.EXPO_PUBLIC_CONFIG_IOS_BUNDLEIDENTIFIER,
     supportsTablet: true

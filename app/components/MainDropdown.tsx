@@ -3,12 +3,13 @@ import { Keyboard, StyleSheet, View } from 'react-native';
 import { Dropdown } from 'react-native-element-dropdown';
 import { MaterialIcons } from '@expo/vector-icons';
 import { runOnJS } from 'react-native-reanimated';
+import type { MainDropdownValue } from '@app/types';
 
 interface Props {
   isDisabled: boolean;
   data: any;
   value: any | null;
-  selectValue: (value: string) => void;
+  selectValue: (value: MainDropdownValue) => void;
   placeholderName: string;
   labelField: any;
   valueField: any;

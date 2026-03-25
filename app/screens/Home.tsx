@@ -1,22 +1,23 @@
 import React, { useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { MainDropdown } from '@app/components';
+import type { MainDropdownValue } from '@app/types';
 
-const data: Array<string> = [
-  'Item 1',
-  'Item 2',
-  'Item 3',
-  'Item 4',
-  'Item 5',
-  'Item 6',
-  'Item 7',
-  'Item 8',
-  'Item 9',
-  'Item 10'
+const data: Array<MainDropdownValue> = [
+  { id: 1, name: 'Item 1' },
+  { id: 2, name: 'Item 2' },
+  { id: 3, name: 'Item 3' },
+  { id: 4, name: 'Item 4' },
+  { id: 5, name: 'Item 5' },
+  { id: 6, name: 'Item 6' },
+  { id: 7, name: 'Item 7' },
+  { id: 8, name: 'Item 8' },
+  { id: 9, name: 'Item 9' },
+  { id: 10, name: 'Item 10' }
 ];
 
 export default function Home(): ReactComponent {
-  const [mainDropdownValue, setMainDropdownValue] = useState<string | null>(null);
+  const [mainDropdownValue, setMainDropdownValue] = useState<MainDropdownValue | null>(null);
   return (
     <View style={styles.container}>
       <MainDropdown
@@ -36,7 +37,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingTop: 80,
-    backgroundColor: '#ffffff',
-    alignItems: 'center'
+    paddingHorizontal: 20,
+    backgroundColor: '#ffffff'
   }
 });
