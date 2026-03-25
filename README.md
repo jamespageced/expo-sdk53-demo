@@ -1,4 +1,4 @@
-# expo-sdk-53-hello-world-with-react-native-element-dropdown
+# expo-sdk53-demo
 
 expo app containing all the setup, linting, and config needed to deploy a hello world app
 
@@ -16,13 +16,13 @@ expo app containing all the setup, linting, and config needed to deploy a hello 
 ## Setup Project
 
 - open powershell in the directory you want to clone the project
-- execute command: `git clone https://github.com/jamespageced/expo-sdk-53-hello-world-with-firebase.git`
+- execute command: `git clone https://github.com/jamespageced/expo-sdk53-demo.git`
 - IF WINDOWS PLATFORM
   - **_Note: one of the packages has a directory over the max character limit allowed in windows, so this was the recommended workaround. You can read more about this here: https://github.com/expo/expo/issues/36274_**
-  - execute command: `cd .\expo-sdk-53-hello-world-with-firebase\scripts`
+  - execute command: `cd .\expo-sdk53-demo\scripts`
   - execute command: `.\windows_setup_ninja.ps1`
 - IF APPLE PLATFORM
-  - execute command: `cd ./expo-sdk-53-hello-world-with-firebase/scripts/`
+  - execute command: `cd ./expo-sdk53-demo/scripts/`
   - execute command: `./apple_setup_ninja.ps1`
 - execute command: `cd ..`
 - create a new `.env` file in the root directory
